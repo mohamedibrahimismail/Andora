@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Page"
+    android:orientation="vertical"
+
+    >
+<TextView
+    android:id="@+id/men"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="MEN"
+    android:textColor="@color/white"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:shadowColor="@color/colorPrimaryDark"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="3"
+    android:background="@drawable/men"
+    />
+    <TextView
+        android:id="@+id/women"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="WOMEN"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:background="@drawable/women"
+        />
+
+    <TextView
+        android:id="@+id/kids"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="KIDS"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:background="@drawable/kids"
+        />
+
+</LinearLayout>

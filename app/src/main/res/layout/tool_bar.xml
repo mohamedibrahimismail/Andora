@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:orientation="vertical"
+    android:elevation="2dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3"
+
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/menu"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/call"
+                android:layout_toRightOf="@+id/menu"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/ic_call"
+                />
+        </RelativeLayout>
+
+
+
+
+            <ImageView
+
+                android:layout_weight="1.2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitXY"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+           <ImageButton
+                android:layout_toLeftOf="@+id/shoped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                />
+
+            <AbsoluteLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/shoped"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cart"
+                android:background="@null"
+                />
+                <TextView
+                    android:id="@+id/counter"
+                    android:textStyle="bold"
+                    android:layout_x="10dp"
+                    android:background="@drawable/item_count"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:text="0"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    />
+            </AbsoluteLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</Toolbar>
